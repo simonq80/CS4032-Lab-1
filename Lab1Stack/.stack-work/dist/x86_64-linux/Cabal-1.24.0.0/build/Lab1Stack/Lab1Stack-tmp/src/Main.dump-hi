@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-02 19:47:33.392899 UTC
+2016-11-02 20:03:03.613247 UTC
 
 interface main@main:Main 8001
-  interface hash: 0dc574ed60ad5c8b73143238f39bac12
-  ABI hash: 67382fa568dcd935faea1a98e50f9ca5
+  interface hash: 623b21cac966f1d391f826ead161b266
+  ABI hash: 48f9beb5c0a7776f5adc4e06f52f8c93
   export-list hash: ec42b4fed2aedc694b3f65d7c6cef402
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ce881a2736b6cecc10ebeaa52d3e03c0
@@ -81,7 +81,7 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-e8a5296e38604e0e55be3e62847443b1
+27a4a710c8512bd05a310132bf017a39
   $wsendMess ::
     Foreign.C.Types.CInt
     -> GHC.Base.String
@@ -113,7 +113,7 @@ e8a5296e38604e0e55be3e62847443b1
                       Main.sendMess4
                       Main.sendMess3
                       Main.sendMess2)
-                   4096#
+                   2048#
                    ipv } } }) -}
 81e2f8e8e7524d5e9dad8a0b61f7dfcb
   createConnection ::
@@ -166,22 +166,24 @@ e8a5296e38604e0e55be3e62847443b1
   createConnection2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "Pattern match failure in do expression at src/Main.hs:16:9-20"#) -}
-1f78c28f101495da38294c7d8d0511c6
+7323cbe22c7843f14ac0cd69268a6fea
   getRequest :: GHC.Base.String -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>,
      Unfolding: (\ (s :: GHC.Base.String) ->
                  GHC.CString.unpackAppendCString#
                    "GET /echo.php?message="#
                    (GHC.Base.++ @ GHC.Types.Char s Main.getRequest1)) -}
-c978ce20bc9d6e3dab3787f8d4d81dd5
+cd17f3601cd41350d7afea47a568d763
   getRequest1 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# " HTTP/1.1"#) -}
-afedad57d6ac0ddf496866e4a8746fc5
+  {- Unfolding: (GHC.CString.unpackCString#
+                   " HTTP/1.1\r\n\
+                   \\r\n"#) -}
+e53f714d94bca63aa6dd9403d6f33353
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-4d83fbbf4f599a69a32727e82304199e
+a5ce83525c739fef1a7d0a05908bbdee
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -208,7 +210,7 @@ afedad57d6ac0ddf496866e4a8746fc5
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case Network.Socket.ByteString.$wrecv
                         ww
-                        4096#
+                        2048#
                         ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  Data.ByteString.Char8.hPutStrLn1
                    GHC.IO.Handle.FD.stdout
@@ -223,7 +225,7 @@ afedad57d6ac0ddf496866e4a8746fc5
 88400abc7d22d2ae11affe8e1b58f207
   main4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "localhost"#) -}
-4b5ac8907728f4056bd0155dc08d91b7
+305b16c9ed7e0ddf69800dbaee1ab320
   main5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -231,10 +233,10 @@ afedad57d6ac0ddf496866e4a8746fc5
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-a09a29a57f6fe341c73122b5c73d8413
+b9e2b8598c9dcc4bb68b80cd92d3d3a2
   main_cs :: [GHC.Types.Char]
   {- Unfolding: (Main.getRequest Main.main2) -}
-d8819e080f03527255a56dd20b850ee4
+b82b29d63af2acd191f4c2292a1c5703
   sendMess ::
     Network.Socket.Types.Socket
     -> GHC.Base.String
@@ -247,7 +249,7 @@ d8819e080f03527255a56dd20b850ee4
                  ->_R <GHC.Base.String>_R
                  ->_R Sym (GHC.Types.N:IO[0]
                                <Data.ByteString.Internal.ByteString>_R)) -}
-4e4e6bb2199758b0376d8da96eaaee1e
+bd8aa6a9c4c4fa32459aaa4ef74d61c5
   sendMess1 ::
     Network.Socket.Types.Socket
     -> GHC.Base.String

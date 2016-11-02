@@ -22,7 +22,7 @@ createConnection h p = do
 sendMess :: Socket -> String -> IO B8.ByteString
 sendMess s m = do
   send s (B8.pack $ getRequest m)
-  recv s 4096
+  recv s 2048
 
 getRequest :: String -> String
-getRequest s = "GET /echo.php?message=" ++ s ++ " HTTP/1.1"
+getRequest s = "GET /echo.php?message=" ++ s ++ " HTTP/1.1\r\n\r\n"
