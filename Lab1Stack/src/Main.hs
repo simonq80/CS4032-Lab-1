@@ -1,7 +1,5 @@
 module Main where
-import System.IO
 import qualified Data.ByteString.Char8 as B8
-import Network.HTTP.Base (urlEncode)
 import Network.Socket hiding (send, recv)
 import Network.Socket.ByteString
 import Options.Applicative
