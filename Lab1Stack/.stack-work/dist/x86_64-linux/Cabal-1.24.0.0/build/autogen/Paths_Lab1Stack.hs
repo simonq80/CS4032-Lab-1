@@ -29,11 +29,11 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/simon/lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/bin"
-libdir     = "/home/simon/lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/lib/x86_64-linux-ghc-8.0.1/Lab1Stack-0.1.0.0"
-datadir    = "/home/simon/lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/share/x86_64-linux-ghc-8.0.1/Lab1Stack-0.1.0.0"
-libexecdir = "/home/simon/lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/libexec"
-sysconfdir = "/home/simon/lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/etc"
+bindir     = "/Lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/bin"
+libdir     = "/Lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/lib/x86_64-linux-ghc-8.0.1/Lab1Stack-0.1.0.0"
+datadir    = "/Lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/share/x86_64-linux-ghc-8.0.1/Lab1Stack-0.1.0.0"
+libexecdir = "/Lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/libexec"
+sysconfdir = "/Lab1/CS4032-Lab-1/Lab1Stack/.stack-work/install/x86_64-linux/lts-7.7/8.0.1/etc"
 
 getBinDir, getLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "Lab1Stack_bindir") (\_ -> return bindir)
